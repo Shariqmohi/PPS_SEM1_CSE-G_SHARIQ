@@ -52,27 +52,20 @@ Print the appropriate English representation,`even`, or `odd`, based on the cond
 **Language:** C  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-02T11:14:40.422Z  
+**Submitted:** 2026-10-08T16:30:47.588Z  
 
 ```c
 #include <stdio.h>
 #include <string.h>
 #include <math.h>
 #include <stdlib.h>
-
-
-
 int main() 
 {
     int a, b,i,r;
     scanf("%d\n%d", &a, &b);
-  	// Complete the code.
-for(i=a;i<=b;i++)
-{  
-   if(i<=9) 
-   {
-    switch(i)
-    {
+for(i=a;i<=b;i++){
+   if(i<=9) {
+    switch(i){
         case 1:printf("one\n");break;
         case 2:printf("two\n");break;
         case 3:printf("three\n");break;
@@ -81,21 +74,14 @@ for(i=a;i<=b;i++)
         case 6:printf("six\n");break;
         case 7:printf("seven\n");break;
         case 8:printf("eight\n");break;
-        case 9:printf("nine\n");break;
-    }
-    
+        case 9:printf("nine\n");break;} 
    }
-   else 
-   {
+   else {
     r=i%2;
     if(r==0)
       printf("even\n");
     else 
-      printf("odd\n");
-    
-   } 
-}
-
+      printf("odd\n");} }  
 return 0;
 }
 
